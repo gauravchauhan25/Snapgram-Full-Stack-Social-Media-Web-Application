@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
       --color-background: #211f27;
       --color-white: #202528;
@@ -23,7 +25,7 @@
 
 .light-theme-variables {
       --color-background: #f0eded;
-      
+
       --color-white: rgb(247, 247, 247);
       --color-light: hsl(0, 0%, 93%);
       --color-secondary: hsl(252, 100%, 90%);
@@ -55,8 +57,13 @@ body {
       margin: 0 auto;
 }
 
+.logo {
+      font-size: 1.3rem;
+}
+
 .profile-photo {
-      width: 3rem;
+      width: 2.7rem;
+      height: 2.7rem;
       aspect-ratio: 1/1;
       border-radius: 50%;
       overflow: hidden;
@@ -73,7 +80,7 @@ img {
       padding: var(--btn-padding);
       font-weight: 500;
       border-radius: var(--border-radius);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
 }
 
 .btn:hover {
@@ -100,10 +107,10 @@ img {
 nav {
       width: 100%;
       background: var(--color-white);
-      padding: 0.65rem 0;
+      padding: 0.5rem 0;
       position: fixed;
       top: 0;
-      z-index: 10;
+      z-index: 100;
       box-shadow: 0 0 1rem var(--color-primary-variant);
 }
 
@@ -123,7 +130,7 @@ nav .container {
       background: transparent;
       width: 40vw;
       margin-left: 1rem;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--color-dark);
 }
 
@@ -157,6 +164,17 @@ nav .container {
       color: white;
       border-radius: var(--border-radius);
 }
+
+/* .profile-container {
+      position: fixed;
+      top: 5rem;
+      left: 85%;
+      background: var(--color-white);
+      padding: var(--card-padding);
+      border-radius: var(--card-border-radius);
+      z-index: 99;
+} */
+
 
 
 /* ----------------------MAIN---------------------------------- */
@@ -281,6 +299,168 @@ main .container .left .profile {
       padding: 1rem 0;
 }
 
+/* -----------------Notification Popup----------------------- */
+.left .notification-popup {
+      position: absolute;
+      top: 0;
+      left: 110%;
+      width: 30rem;
+      background: var(--color-white);
+      border-radius: var(--card-border-radius);
+      padding: var(--card-padding);
+      box-shadow: 0 0 2rem var(--color-primary-variant);
+      z-index: 8;
+      display: none;
+}
+
+.left .notification-popup::before {
+      content: "";
+      width: 1.8rem;
+      height: 1.8rem;
+      display: block;
+      background: var(--color-white);
+      position: absolute;
+      left: -0.9rem;
+      transform: rotate(45deg);
+}
+
+.left .notification-popup>div {
+      display: flex;
+      align-items: start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+}
+
+.left .notification-popup small {
+      display: block;
+}
+
+.left .notification-popup .notification-body p {
+      font-size: 0.85rem;
+}
+
+
+/* ----------------Middle------------------------- */
+.middle .stories {
+      display: flex;
+      justify-content: space-evenly;
+      height: 6rem;
+      width: 32rem;
+      gap: 0.5rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+}
+
+.middle .stories::-webkit-scrollbar {
+      display: none;
+      /* Hides scrollbar */
+}
+
+.middle .stories .story {
+      display: inline-block;
+      position: relative;
+      height: 4rem;
+      width: auto;
+      cursor: pointer;
+      margin-right: 1rem;
+}
+
+.middle .stories .story::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 5rem;
+      position: absolute;
+      bottom: 0;
+}
+
+.middle .stories .story .name {
+      width: 2rem;
+      font-size: 0.6rem;
+      margin-top: 5px;
+      ;
+      text-align: center;
+      z-index: 2;
+}
+
+
+.middle .story .profile-photo {
+      width: 4rem;
+      height: 4rem;
+      align-self: start;
+      object-fit: cover;
+      border: 3px solid var(--color-primary);
+}
+
+/* ------------------Create post-------------------- */
+.middle .create-post {
+      width: 100%;
+      display: flex;
+      /* display: none; */
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      background: var(--color-white);
+      padding: 0.2rem var(--card-padding);
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 0.2rem var(--color-primary-variant);
+}
+
+.middle .create-post .profile-photo {
+      width: 3.2rem;
+      height: auto;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+}
+
+.middle .create-post input[type="text"] {
+      justify-self: start;
+      width: 100%;
+      padding: 0.8rem;
+      background: transparent;
+      color: var(--color-dark);
+      margin-right: 1rem;
+      font-size: 0.8rem;
+}
+
+
+/* Scrollers */
+.middle .stories button span {
+      font-size: 0.7rem;
+}
+.scroll-button {
+      background-color: var(--color-primary-variant);
+      color: white;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+}
+
+.scroll-button:hover {
+      background-color: #282531;
+}
+
+.scroll-button.left {
+      left: 0;
+}
+
+.scroll-button.right {
+      right: 0;
+}
+
+
+
+/* -------------Feeds------------------------- */
 .middle .feeds .feed {
       background: var(--color-white);
       border-radius: var(--card-border-radius);
@@ -304,12 +484,13 @@ main .container .left .profile {
 }
 
 .feed .head .ingo h3 {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       line-height: 1rem
 }
 
 .middle .feeds .feed .head .ingo small {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
+      color: var(--color-gray);
 }
 
 .middle .feed .photo {
@@ -323,7 +504,7 @@ main .container .left .profile {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 1.4rem;
+      font-size: 0.7rem;
       margin: 0.6rem;
 }
 
@@ -339,7 +520,7 @@ main .container .left .profile {
 }
 
 .middle .bookmark span {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       cursor: pointer;
 }
 
@@ -363,17 +544,16 @@ main .container .left .profile {
 
 .middle .liked-by p {
       margin-left: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 0.9rem;
 }
 
 .middle .caption p {
-      font-size: 1rem;
+      font-size: 0.85rem;
       margin-bottom: 0.6rem;
-      line-height: 1.8rem;
 }
 
 .middle .caption b {
-      font-size: 1rem;
+      font-size: 0.9rem;
 }
 
 .middle .caption b:hover {
@@ -383,9 +563,384 @@ main .container .left .profile {
 
 .middle .comments a {
       color: var(--color-gray);
-      font-size: 1.1rem;
+      font-size: 0.9rem;
 }
 
 .middle .comments a:hover {
       text-decoration: underline;
+}
+
+
+/* ------------------RIGHT----------------------- */
+main .container .right {
+      height: max-content;
+      position: sticky;
+      top: var(--sticky-top-right);
+      bottom: 0;
+      border-radius: var(--card-border-radius);
+}
+
+.right .messages .search-bar i {
+      font-size: 1.1rem;
+}
+
+.right .messages {
+      background: var(--color-white);
+      border-radius: var(--card-border-radius);
+      padding: var(--card-padding);
+      box-shadow: 0 0 1rem var(--color-primary-variant);
+      display: none;
+}
+
+.right .messages .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+}
+
+.right .messages i {
+      font-size: 1.3rem;
+}
+
+.right .messages .search-bar {
+      display: flex;
+      margin-bottom: 1rem;
+}
+
+.right .messages .search-bar input {
+      font-size: 0.8rem;
+}
+
+.right .messages .category {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      cursor: pointer;
+}
+
+.right .messages .category h6 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 4px solid var(--color-light);
+      padding-bottom: 0.5rem;
+}
+
+.right .messages .category .active {
+      border-color: var(--color-dark);
+}
+
+.right .messages .message-requests {
+      color: var(--color-primary);
+}
+
+.right .messages .message {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      align-items: start;
+      cursor: pointer;
+}
+
+.right .messages .message h5 {
+      font-size: 0.85rem;
+      font-weight: 500;
+}
+
+.right .messages .message p {
+      font-size: 0.7rem;
+      color: var(--color-gray);
+}
+
+.right .message .profile-photo {
+      position: relative;
+      /* overflow: visible; */
+}
+
+.right .profile-photo img {
+      border-radius: 50%;
+}
+
+.right .messages .message:last-child {
+      margin: 0;
+}
+
+.right .messages .message p {
+      font-size: 0.7rem;
+      font-weight: 600;
+}
+
+.right .messages .message .profile-photo .active {
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      border: 3px solid var(--color-white);
+      background: var(--color-success);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+}
+
+
+/* -------------Friend requests------------------ */
+.right .friend-requests {
+      margin-top: 1rem;
+      display: none;
+}
+
+.right .friend-requests .info h5 {
+      color: var(--color-dark);
+      margin: 0.5rem 0;
+      font-size: 0.85rem;
+}
+
+.right .request {
+      background: var(--color-white);
+      padding: 1.5rem;
+      border-radius: var(--card-border-radius);
+      box-shadow: 0 0 1rem var(--color-primary-variant);
+      margin-bottom: 1rem;
+}
+
+.right .request .info {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+}
+
+.right .request .action {
+      display: flex;
+      gap: 0.5rem;
+}
+
+
+/* -----------------------Search Influencers------------------------- */
+.main-body {
+      position: fixed;
+      top: 8%;
+      left: 0;
+      justify-content: center;
+      z-index: 100;
+      display: grid;
+}
+
+.main-body.active {
+      backdrop-filter: brightness(0.5);
+      width: 100vw;
+      height: 100vh;
+      transition: all 700ms ease;
+}
+
+.search-influencers {
+      position: absolute;
+      width: 50vw;
+      height: auto;
+      left: 26%;
+      top: 3%;
+      background: var(--color-white);
+      padding: var(--card-padding);
+      border-radius: var(--card-border-radius);
+      flex-direction: column;
+      gap: 0.5rem;
+      display: none;
+}
+
+.search-influencers p.active {
+      display: none;
+}
+
+.search-influencers .influencer {
+      /* display: flex; */
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      display: none;
+}
+
+.search-influencers .influencer:hover {
+      background: var(--color-light);
+      transition: all 400ms ease;
+}
+
+.search-influencers::before {
+      content: "";
+      width: 1.8rem;
+      height: 1.8rem;
+      display: block;
+      background: var(--color-white);
+      position: absolute;
+      top: -0.7rem;
+      left: 2rem;
+      transform: rotate(45deg);
+}
+
+/* Footer */
+footer {
+      background: var(--color-white);
+      padding: 1rem;
+      box-shadow: var(--box-shadow);
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      z-index: 100;
+      width: 100%;
+      display: none;
+}
+
+footer .menu-item a  {
+      display: flex;
+}
+
+footer .menu-item span i {
+      align-items: center;
+      justify-content: center;
+      margin: 0 1.2rem;
+}
+
+footer .menu-item h3 {
+      display: none;
+}
+
+
+@media screen and (max-width: 980px) {
+      .container {
+            width: 96%;
+      }
+
+      main .container {
+            grid-template-columns: 5rem auto 0;
+            gap: 1rem;
+      }
+
+      .theme-toggler {
+            height: 2rem;
+            width: 5.1rem;
+      }
+
+      .left {
+            z-index: 5;
+      }
+
+      .left .sidebar .menu-item span i {
+            font-size: 1.5rem;
+      }
+
+      .left .sidebar .menu-item span {
+            font-size: 1.5rem;
+      }
+
+      .middle .stories {
+            margin: 0 auto;
+            height: 7rem;
+            width: 38rem;
+      }
+
+      .left .sidebar h3 {
+            display: none;
+      }
+
+      .left .btn {
+            display: none;
+      }
+
+      .search-influencers {
+            left: 23%;
+      }
+}
+
+@media screen and (max-width: 700px) {
+      nav .search-bar {
+            display: none;
+      }
+
+      nav {
+            padding: 1.2rem 0.5rem;
+      }
+
+      nav .create {
+            display: none;
+      }
+
+      main .container {
+            grid-template-columns: 0 auto 0;
+            gap: 0;
+      }
+
+      .middle .stories {
+            margin: 0 1rem;
+            height: 6rem;
+            width: 30rem;
+      }
+
+      .middle .stories  .story {
+            margin: 0 0.4rem;
+      }
+
+      .middle .stories .scroll-button {
+            display: none;
+      }
+
+      
+      .left .notification-popup {
+            position: absolute;
+            left: -22.5rem;
+            width: 21rem;
+      }
+
+      .left .notification-popup::before {
+            display: absolute;
+            top: 1rem;
+            left: 20rem;
+            transform: rotate(45deg);
+            display: block;
+      }
+
+      .left .notification-popup .notification-body p {
+            font-size: 1.1rem;
+      }
+
+      main .container .middle {
+            grid-column: 1/3;
+            width: 100%;
+      }
+      main .container .left {
+            display: none;
+      }
+      
+      main .container .right {
+            display: none;
+      }
+      
+      footer {
+            display: block;
+      }
+
+      footer .menu-item span i{
+            font-size: 1rem;
+      }
+      
+      .theme-toggler {
+            position: absolute;
+            right: 1rem;
+      }
+
+      .middle .active {
+            display: none;
+      }
+
+      .search-influencers {
+            display: none;
+      }
+}
+
+@media screen  and (max-width: 500px) {
+      .middle .stories {
+            height: 6rem;
+            width: 25rem;
+      }
+
+      footer .menu-item span i{
+            font-size: 0.85rem;
+      }
 }

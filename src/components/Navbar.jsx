@@ -17,11 +17,11 @@ function Navbar() {
 
                               <div className="theme-toggler">
                                     <span className="material-icons-sharp ">
-                                          {/* <i className="fa-solid fa-sun"></i> */}
+                                          <i className="fa-solid fa-sun"></i>
                                     </span>
 
                                     <span className="material-icons-sharp active">
-                                          {/* <i className="fa-solid fa-moon" style="color: #030303;"></i> */}
+                                          <i className="fa-solid fa-moon" style="color: #030303;"></i>
                                     </span>
                               </div>
 
