@@ -42,6 +42,31 @@ export const stories = [
     name: "Lionel Messi",
     imageUrl: "../img/profile.jpeg",
   },
+  {
+    id: "story8",
+    name: "Rosamund Pike",
+    imageUrl: "../img/profile.jpg",
+  },
+  {
+    id: "story9",
+    name: "Chris Hemsworth",
+    imageUrl: "../img/profile.jpg",
+  },
+  {
+    id: "story10",
+    name: "Tom Holland",
+    imageUrl: "../img/profile.jpeg",
+  },
+  {
+    id: "story11",
+    name: "Chris Evans",
+    imageUrl: "../img/profile.jpeg",
+  },
+  {
+    id: "story12",
+    name: "Lionel Messi",
+    imageUrl: "../img/profile.jpeg",
+  }
 ];
 
 // export const feeds = [
@@ -131,8 +156,7 @@ export const feeds = [
     id: "1",
     username: "RobertDowney",
     location: "Los Angeles, USA",
-    imageUrl:
-      "https://i.pinimg.com/236x/bd/2f/5d/bd2f5dcce7fd81d9fc275631cce87bc4.jpg",
+    imageUrl: "",
     likeCount: 287,
     commentCount: 35,
     caption: "",
@@ -143,8 +167,7 @@ export const feeds = [
     id: "2",
     username: "GalGadot",
     location: "Tel Aviv, Israel",
-    imageUrl:
-      "https://i.pinimg.com/474x/89/11/b5/8911b57f2bbf4af718a59daac72fcc54.jpg",
+    imageUrl: "",
     likeCount: 341,
     commentCount: 42,
     caption: "",
@@ -155,8 +178,7 @@ export const feeds = [
     id: "3",
     username: "ChrisEvans",
     location: "Boston, USA",
-    imageUrl:
-      "https://i.pinimg.com/236x/f5/49/55/f549558887c20ba0a03d9a328353af57.jpg",
+    imageUrl: "",
     likeCount: 298,
     commentCount: 50,
     caption: "",

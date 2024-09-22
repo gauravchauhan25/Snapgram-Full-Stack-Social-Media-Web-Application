@@ -1,27 +1,77 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { stories } from "../sources/constants";
 
 export default function Stories() {
+  const storyContainerRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  useEffect(() => {
+    const storyContainer = storyContainerRef.current;
+
+    const updateButtonVisibility = () => {
+      setCanScrollLeft(storyContainer.scrollLeft > 0);
+      setCanScrollRight(
+        storyContainer.scrollLeft + storyContainer.clientWidth < storyContainer.scrollWidth
+      );
+    };
+
+    // Initial visibility check
+    updateButtonVisibility();
+
+    storyContainer.addEventListener("scroll", updateButtonVisibility);
+
+    return () => {
+      storyContainer.removeEventListener("scroll", updateButtonVisibility);
+    };
+  }, []);
+
+  const scrollLeft = () => {
+    storyContainerRef.current.scrollBy({
+      left: -200,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    storyContainerRef.current.scrollBy({
+      left: 200,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
-      <div class="stories">
-        <button id="scroll-left" class="scroll-button left">
-          <span class="material-symbols-outlined">arrow_back_ios</span>
-        </button>
+      <div
+        className="stories"
+        ref={storyContainerRef}
+        style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+      >
+        {canScrollLeft && (
+          <button id="scroll-left" onClick={scrollLeft} className="scroll-button">
+            <span className="material-symbols-outlined">arrow_back_ios</span>
+          </button>
+        )}
 
-        {/* Loop for creating mutiple stories */}
+        {/* Loop for creating multiple stories */}
         {stories.map((story) => (
-          <div class="story" key={story.id}>
-            <div class="profile-photo">
+          <div className="story" key={story.id}>
+            <div className="profile-photo">
               <img src={story.imageUrl} alt="storyImg" />
             </div>
-            <p class="name">{story.name}</p>
+            <p className="name">{story.name}</p>
           </div>
         ))}
 
-        <button id="scroll-right" class="scroll-button right">
-          <span class="material-symbols-outlined">arrow_forward_ios</span>
-        </button>
+        {canScrollRight && (
+          <button
+            id="scroll-right"
+            onClick={scrollRight}
+            className="scroll-button"
+          >
+            <span className="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
+        )}
       </div>
     </>
   );

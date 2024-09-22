@@ -485,7 +485,7 @@ main .container .left .profile {
 
 .middle .feed .photo {
   width: 100%;
-  max-width: 1080px;
+  /* max-width: 1080px; */
   border-radius: var(--card-border-radius);
   overflow: hidden;
   margin-bottom: 1rem;
@@ -493,7 +493,7 @@ main .container .left .profile {
   height: auto;
   object-fit: cover;
   border-radius: 10px;
-  aspect-ratio: 4 / 5;
+  /* aspect-ratio: 4 / 5; */
 }
 
 .middle .feed .action-button {
