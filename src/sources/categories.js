@@ -2,81 +2,65 @@ export const categories = [
   {
     name: "Home",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">house</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">house</span>
+      </i>
     ),
   },
   {
     name: "Explore",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">explore</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">explore</span>
+      </i>
     ),
   },
   {
     name: "Notification",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">notifications</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">notifications</span>
+      </i>
     ),
   },
   {
     name: "Messages",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">mail</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">mail</span>
+      </i>
     ),
   },
   {
     name: "Requests",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">favorite</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">favorite</span>
+      </i>
     ),
   },
   {
     name: "Create",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">add_box</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">add_box</span>
+      </i>
     ),
   },
   {
     name: "Reels",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">movie</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">movie</span>
+      </i>
     ),
   },
   {
     name: "Settings",
     icon: (
-      <span>
-        <i>
-          <span className="material-symbols-outlined">settings</span>
-        </i>
-      </span>
+      <i>
+        <span className="material-symbols-outlined">settings</span>
+      </i>
     ),
   },
 ];
