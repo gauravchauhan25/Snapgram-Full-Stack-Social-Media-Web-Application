@@ -2,6 +2,7 @@ export const users = [
   {
     id: "user1",
     username: "Gaurav Chauhan",
+    imgProfileUrl: "",
     userId: "@gaurav02",
   },
 ];
@@ -15,27 +16,32 @@ export const stories = [
   {
     id: "story2",
     name: "Chris Evans",
-    imageUrl: "../img/profile.jpg",
+    imageUrl:
+      "https://i.pinimg.com/236x/43/0a/20/430a202a522c673f3ccc48e6ff844163.jpg",
   },
   {
     id: "story3",
     name: "Rosamund Pike",
-    imageUrl: "../img/profile.jpg",
+    imageUrl:
+      "https://i.pinimg.com/236x/05/7c/06/057c06543250d3a184f94096111528ce.jpg",
   },
   {
     id: "story4",
     name: "Chris Hemsworth",
-    imageUrl: "../img/profile.jpg",
+    imageUrl:
+      "https://i.pinimg.com/236x/1a/e9/56/1ae956a7641b68406fde9d8dbe6533b1.jpg",
   },
   {
     id: "story5",
-    name: "Tom Holland",
-    imageUrl: "../img/profile.jpeg",
+    name: "Danielle Radcliffe",
+    imageUrl:
+      "https://i.pinimg.com/236x/8c/88/29/8c8829c5a1d09a7a2c217fb0a6a6e419.jpg",
   },
   {
     id: "story6",
-    name: "Chris Evans",
-    imageUrl: "../img/profile.jpeg",
+    name: "Hugh Jackman",
+    imageUrl:
+      "https://i.pinimg.com/236x/ac/a8/31/aca831eb6f391eb9539468bd8d4624df.jpg",
   },
   {
     id: "story7",
@@ -66,97 +72,16 @@ export const stories = [
     id: "story12",
     name: "Lionel Messi",
     imageUrl: "../img/profile.jpeg",
-  }
+  },
 ];
-
-// export const feeds = [
-//   {
-//     id: "messi",
-//     name: "Lionel Messi",
-//     location: "Argentina, 2 Days ago",
-//     imgProfileUrl: "",
-//     imgUrl: "./img/messi.jpeg",
-//     likedBy1ProfileImg: "",
-//     likedBy2ProfileImg: "",
-//     likedBy3ProfileImg: "",
-//     likedBy: "Chris Evans",
-//     likeCount: "30,132",
-//     comments: "88,264",
-//     caption: "Una más… 🏆🏆",
-//     hashtags: "#lifestyle #life #fashion ",
-//   },
-//   {
-//     id: "rose",
-//     name: "Rose Mary",
-//     location: "Argentina, 2 Days ago",
-//     imgProfileUrl: "",
-//     imgUrl:
-//       "https://www.instagram.com/p/C9b7VYlNPgB/?utm_source=ig_web_copy_link",
-//     likedBy1ProfileImg: "",
-//     likedBy2ProfileImg: "",
-//     likedBy3ProfileImg: "",
-//     likedBy: "Chris Evans",
-//     likeCount: "30,132",
-//     comments: "88,264",
-//     caption: "Una más… 🏆🏆",
-//     hashtags: "#lifestyle #life #fashion ",
-//   },
-//   {
-//     id: "Chris",
-//     name: "Chris Evans",
-//     location: "Argentina, 2 Days ago",
-//     imgProfileUrl: "",
-//     imgUrl:
-//       "https://www.instagram.com/p/C9b7VYlNPgB/?utm_source=ig_web_copy_link",
-//     likedBy1ProfileImg: "",
-//     likedBy2ProfileImg: "",
-//     likedBy3ProfileImg: "",
-//     likedBy: "Chris Evans",
-//     likeCount: "30,132",
-//     comments: "88,264",
-//     caption: "Una más… 🏆🏆",
-//     hashtags: "#lifestyle #life #fashion ",
-//   },
-//   {
-//     id: "tom",
-//     name: "Tom Holland",
-//     location: "Argentina, 2 Days ago",
-//     imgProfileUrl: "",
-//     imgUrl:
-//       "https://www.instagram.com/p/C9b7VYlNPgB/?utm_source=ig_web_copy_link",
-//     likedBy1ProfileImg: "",
-//     likedBy2ProfileImg: "",
-//     likedBy3ProfileImg: "",
-//     likedBy: "Chris Evans",
-//     likeCount: "30,132",
-//     comments: "88,264",
-//     caption: "Una más… 🏆🏆",
-//     hashtags: "#lifestyle #life #fashion ",
-//   },
-//   {
-//     id: "ronaldo",
-//     name: "Christiano Ronaldo",
-//     location: "Argentina, 2 Days ago",
-//     imgProfileUrl: "",
-//     imgUrl:
-//       "https://www.instagram.com/p/C9b7VYlNPgB/?utm_source=ig_web_copy_link",
-//     likedBy1ProfileImg: "",
-//     likedBy2ProfileImg: "",
-//     likedBy3ProfileImg: "",
-//     likedBy: "Chris Evans",
-//     likeCount: "30,132",
-//     comments: "88,264",
-//     caption: "Una más… 🏆🏆",
-//     hashtags: "#lifestyle #life #fashion ",
-//   },
-// ];
 
 export const feeds = [
   {
     id: "1",
     username: "RobertDowney",
+    imgProfileUrl: "",
     location: "Los Angeles, USA",
-    imageUrl: "",
+    imageUrl: "https://wallpaperaccess.com/full/781200.jpg",
     likeCount: 287,
     commentCount: 35,
     caption: "",
@@ -166,8 +91,9 @@ export const feeds = [
   {
     id: "2",
     username: "GalGadot",
+    imgProfileUrl: "",
     location: "Tel Aviv, Israel",
-    imageUrl: "",
+    imageUrl: "https://wallpaperaccess.com/thumb/2985206.jpg",
     likeCount: 341,
     commentCount: 42,
     caption: "",
@@ -177,8 +103,10 @@ export const feeds = [
   {
     id: "3",
     username: "ChrisEvans",
+    imgProfileUrl:
+      "https://i.pinimg.com/236x/43/0a/20/430a202a522c673f3ccc48e6ff844163.jpg",
     location: "Boston, USA",
-    imageUrl: "",
+    imageUrl: "https://wallpaperaccess.com/thumb/1089821.jpg",
     likeCount: 298,
     commentCount: 50,
     caption: "",
@@ -188,18 +116,22 @@ export const feeds = [
   {
     id: "4",
     username: "Danielle Radcliffe",
+    imgProfileUrl:
+      "https://i.pinimg.com/236x/8c/88/29/8c8829c5a1d09a7a2c217fb0a6a6e419.jpg",
     location: "Paris, France",
     imageUrl:
-      "https://i.pinimg.com/originals/58/95/69/589569d79f19cf430ad82ff6c6a9d620.jpg",
+      "https://i.pinimg.com/564x/e9/da/32/e9da3295e28aa8ef685267675ed6f9c0.jpg",
     likeCount: 415,
     commentCount: 55,
-    caption: "",
+    caption:
+      "Daniel Radcliffe attending the 'Harry Potter and the Half-Blood Prince Film Premiere' at the Ziegfeld Theatre in New York City.",
     likedBy: ["Emma Watson"],
     hashtags: ["#Fashionista", "#Paris", "#Model"],
   },
   {
     id: "5",
     username: "Alexandria Daddrio",
+    imgProfileUrl: "",
     location: "New York, USA",
     imageUrl:
       "https://i.pinimg.com/originals/dc/9e/d4/dc9ed4f5290c90ffbb012e5c5412c7a5.jpg",
@@ -212,6 +144,7 @@ export const feeds = [
   {
     id: "6",
     username: "EmiliaClarke",
+    imgProfileUrl: "",
     location: "Dubrovnik, Croatia",
     imageUrl:
       "https://i.pinimg.com/originals/ff/5a/8b/ff5a8b8a4d4c1b4d303b913084c7ea9a.jpg",
@@ -224,6 +157,7 @@ export const feeds = [
   {
     id: "7",
     username: "Nature Lover",
+    imgProfileUrl: "",
     location: "Banff, Canada",
     imageUrl:
       "https://i.pinimg.com/originals/7e/aa/5d/7eaa5dd8b7004a41633dc4e3a4d0c35d.jpg",
@@ -236,19 +170,28 @@ export const feeds = [
   {
     id: "8",
     username: "Superhero Fan",
+    imgProfileUrl: "",
     location: "Grand Canyon, USA",
     imageUrl:
       "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
     likeCount: 156,
     commentCount: 22,
     caption:
-      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ #thor #ai #thunder…",
+      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ ",
     likedBy: ["Iron Man"],
-    hashtags: ["#GrandCanyon", "#EpicViews", "#Superheroes"],
+    hashtags: [
+      "#thor",
+      "#ai",
+      "#thunder",
+      "#GrandCanyon",
+      "#EpicViews",
+      "#Superheroes",
+    ],
   },
   {
     id: "9",
     username: "WonderWoman",
+    imgProfileUrl: "",
     location: "Iceland",
     imageUrl:
       "https://i.pinimg.com/originals/47/ae/11/47ae115e423b2db476ae85c5011c7b88.jpg",
@@ -261,6 +204,7 @@ export const feeds = [
   {
     id: "10",
     username: "AdventureSeeker",
+    imgProfileUrl: "",
     location: "Maui, Hawaii, USA",
     imageUrl:
       "https://i.pinimg.com/originals/1c/ea/7c/1cea7c0a0d9ea2e4e92c689f79ecb227.jpg",
@@ -273,6 +217,7 @@ export const feeds = [
   {
     id: "11",
     username: "ScarlettJohansson",
+    imgProfileUrl: "",
     location: "New York, USA",
     imageUrl:
       "https://images.unsplash.com/photo-1525462334381-0914a2be8eec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHNjYXJsbGV0dC1qb2huc29ubmV8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
@@ -285,9 +230,10 @@ export const feeds = [
   {
     id: "12",
     username: "HughJackman",
+    imgProfileUrl: "",
     location: "Sydney, Australia",
     imageUrl:
-      "https://images.unsplash.com/photo-1506748686214-2c0ee7fc7c4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGhpZ2gtamFja21hbnxlbnwwfHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
+      "https://i.pinimg.com/236x/94/91/f4/9491f46512dae9eb1dbf1fc385e3c9f3.jpg",
     likeCount: 421,
     commentCount: 52,
     caption: "",
@@ -297,6 +243,7 @@ export const feeds = [
   {
     id: "13",
     username: "EmmaWatson",
+    imgProfileUrl: "",
     location: "London, UK",
     imageUrl:
       "https://images.unsplash.com/photo-1531029306855-d768c897d6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGVtbWEtd2F0c29ufGVufDB8fHx8MTY3NDI3NTI4Mg&ixlib=rb-4.0.3&q=80&w=1080",
@@ -309,6 +256,7 @@ export const feeds = [
   {
     id: "14",
     username: "TomHiddleston",
+    imgProfileUrl: "",
     location: "Edinburgh, Scotland",
     imageUrl:
       "https://images.unsplash.com/photo-1513776640368-f28e01c22d8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHRvbS1oaWRkbGVzdG9uZXxlbnwwfHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
@@ -321,6 +269,7 @@ export const feeds = [
   {
     id: "15",
     username: "Zendaya",
+    imgProfileUrl: "",
     location: "Los Angeles, USA",
     imageUrl:
       "https://images.unsplash.com/photo-1570157289655-c451dcdd6435?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHplbmRheXxlbnwwfHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
@@ -333,6 +282,7 @@ export const feeds = [
   {
     id: "16",
     username: "ChrisPratt",
+    imgProfileUrl: "",
     location: "Seattle, USA",
     imageUrl:
       "https://images.unsplash.com/photo-1565512213-4a26b17d1c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNoYXJsaWVzb3R8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
@@ -345,6 +295,7 @@ export const feeds = [
   {
     id: "17",
     username: "ArianaGrande",
+    imgProfileUrl: "",
     location: "Miami, USA",
     imageUrl:
       "https://images.unsplash.com/photo-1515377905707-7c7d1f0a76d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGFyaWFuYS1ncmFuZGV8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
@@ -357,6 +308,7 @@ export const feeds = [
   {
     id: "18",
     username: "BradPitt",
+    imgProfileUrl: "",
     location: "Paris, France",
     imageUrl:
       "https://images.unsplash.com/photo-1543902880-b4936b8b4158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGJyYWQtcGl0dHxlbnwwfHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
@@ -369,6 +321,7 @@ export const feeds = [
   {
     id: "19",
     username: "RyanReynolds",
+    imgProfileUrl: "",
     location: "Vancouver, Canada",
     imageUrl:
       "https://images.unsplash.com/photo-1512092358251-c7e5f2f6c570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHJ5YW4tcmV5bm9sZHN8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
@@ -381,6 +334,7 @@ export const feeds = [
   {
     id: "20",
     username: "NataliePortman",
+    imgProfileUrl: "",
     location: "Jerusalem, Israel",
     imageUrl:
       "https://images.unsplash.com/photo-1506748686214-9c17c00598d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fG5hdHVyZXxlbnwwfHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",

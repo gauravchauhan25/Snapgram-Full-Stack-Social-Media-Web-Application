@@ -6,7 +6,7 @@ export default function Feed() {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
-  const feedsPerPage = 3;
+  const feedsPerPage = 5;
 
   // Load the initial feeds
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Feed() {
       );
       setFeedList((prevFeeds) => [...prevFeeds, ...newFeeds]);
       setLoading(false);
-    }, 3000);
+    }, 1000);
   };
 
   const handleScroll = () => {
@@ -109,12 +109,13 @@ export default function Feed() {
 
             <div className="caption">
               <p>
-                <b>{feed.name}</b> {feed.caption}
-                <span className="harsh-tag"> {feed.hashtags}</span>
+                <b>{feed.username} </b>
+                {feed.caption}
+                <span className="harsh-tag">{feed.hashtags.join("  ")}</span>
               </p>
             </div>
             <div className="comments text-muted">
-              <a href="#">View all {feed.comments} comments</a>
+              <a href="#">View all {feed.commentCount} comments</a>
             </div>
           </div>
         ))}

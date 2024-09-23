@@ -8,16 +8,12 @@ export default function Sidebar() {
     <>
       <div className="left">
         <div className="sidebar">
-          z
           {categories.map((category) => (
             <a
-              className="menu-item"
+              className={`menu-item ${
+                selectedCategory === category.name ? "active" : ""
+              }`}
               onClick={() => setSelectedCategory(category.name)}
-              style={{
-                background:
-                  category.name === selectedCategory && "hsl(252, 67%, 51%)",
-                color: "white",
-              }}
               key={category.name}
             >
               <span>{category.icon}</span>

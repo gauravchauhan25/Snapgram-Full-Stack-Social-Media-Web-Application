@@ -12,7 +12,8 @@ export default function Stories() {
     const updateButtonVisibility = () => {
       setCanScrollLeft(storyContainer.scrollLeft > 0);
       setCanScrollRight(
-        storyContainer.scrollLeft + storyContainer.clientWidth < storyContainer.scrollWidth
+        storyContainer.scrollLeft + storyContainer.clientWidth <
+          storyContainer.scrollWidth
       );
     };
 
@@ -48,7 +49,11 @@ export default function Stories() {
         style={{ overflowX: "auto", whiteSpace: "nowrap" }}
       >
         {canScrollLeft && (
-          <button id="scroll-left" onClick={scrollLeft} className="scroll-button">
+          <button
+            id="scroll-left"
+            onClick={scrollLeft}
+            className="scroll-button left"
+          >
             <span className="material-symbols-outlined">arrow_back_ios</span>
           </button>
         )}
@@ -67,7 +72,7 @@ export default function Stories() {
           <button
             id="scroll-right"
             onClick={scrollRight}
-            className="scroll-button"
+            className="scroll-button right"
           >
             <span className="material-symbols-outlined">arrow_forward_ios</span>
           </button>
