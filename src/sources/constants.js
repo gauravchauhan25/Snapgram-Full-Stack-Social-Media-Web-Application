@@ -42,7 +42,7 @@ export const stories = [
     id: "story6",
     name: "Hugh Jackman",
     imageUrl:
-      "https://i.pinimg.com/236x/ac/a8/31/aca831eb6f391eb9539468bd8d4624df.jpg",
+      "https://i.pinimg.com/236x/69/fb/38/69fb38bcc63e1ed7cb01f46646ff8356.jpg",
   },
   {
     id: "story7",

@@ -15,7 +15,7 @@ function Navbar() {
         <div className="container">
           <h2 className="logo">
             <img src="" alt="" />
-            SnapGram
+            socialShots
           </h2>
 
           <div className="search-bar">
@@ -26,6 +26,14 @@ function Navbar() {
               placeholder="Search for influencer"
             />
           </div>
+
+          {/* <div className="messenger-img">
+            <img
+              className="color: white;"
+              src="https://cdn-icons-png.flaticon.com/128/1384/1384016.png"
+              alt="m"
+            />
+          </div> */}
 
           <div className="theme-toggler" onClick={handleThemeToggle}>
             <span

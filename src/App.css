@@ -75,6 +75,13 @@ img {
   width: 100%;
 }
 
+.messenger-img img {
+  color: white;
+  width: 2.1rem;
+  height: auto;
+  cursor: pointer;
+}
+
 .btn {
   display: inline-block;
   padding: var(--btn-padding);
@@ -273,12 +280,12 @@ main .container .left .profile {
 }
 
 .left .sidebar .active {
-  background: var(--color-light);
+  background: var(--color-primary);
 }
 
 .left .sidebar .active i,
 .left .sidebar .active h3 {
-  color: var(--color-primary);
+  color: var(--color-dark);
 }
 
 .left .sidebar .active::before {
