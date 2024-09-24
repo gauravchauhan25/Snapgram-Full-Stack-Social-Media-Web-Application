@@ -15,7 +15,7 @@ function Navbar() {
         <div className="container">
           <h2 className="logo">
             <img src="" alt="" />
-            socialShots
+            SnapGram
           </h2>
 
           <div className="search-bar">
