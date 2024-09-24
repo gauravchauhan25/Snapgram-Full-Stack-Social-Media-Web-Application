@@ -3,10 +3,7 @@ export const users = [
     id: "user1",
     username: "Gaurav Chauhan",
     imgProfileUrl: "",
-    likedBy1Profile: "",
-    likedBy2Profile: "",
-    likedBy3Profile: "",
-    userId: "@gaurav02",
+    userId: "@gaurav25",
   },
 ];
 
@@ -14,7 +11,8 @@ export const stories = [
   {
     id: "story1",
     name: "Your Story",
-    imageUrl: "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
+    imageUrl:
+      "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
   },
   {
     id: "story2",
@@ -105,20 +103,31 @@ export const stories = [
 export const feeds = [
   {
     id: "1",
-    username: "RobertDowney",
-    imgProfileUrl: "",
+    username: "Superhero Fan",
+    imgProfileUrl:
+      "https://i.pinimg.com/236x/c8/17/60/c81760d77b8c93a06d51ceb8cdda851f.jpg",
     likedBy1Profile:
-      "https://i.pinimg.com/236x/ee/ba/ad/eebaad114972ea98eb64713d379fc752.jpg",
-    likedBy2Profile: "",
+      "https://i.pinimg.com/564x/e9/da/32/e9da3295e28aa8ef685267675ed6f9c0.jpg",
+    likedBy2Profile:
+      "https://i.pinimg.com/236x/1b/d6/71/1bd671eeb2ab172e8b8fa0f80ad9722b.jpg",
     likedBy3Profile:
-      "https://i.pinimg.com/236x/dd/86/b6/dd86b635382fd8047919b6c32188b096.jpg",
-    location: "Los Angeles, USA",
-    imageUrl: "https://wallpaperaccess.com/full/781200.jpg",
-    likeCount: 287,
-    commentCount: 35,
-    caption: "",
-    likedBy: ["Chris Hemsworth"],
-    hashtags: ["#Hollywood", "#LosAngeles", "#Celebrities"],
+      "https://i.pinimg.com/236x/bc/38/23/bc3823cbac2a8dbf7cde5e2b67c147c5.jpg",
+    location: "Grand Canyon, USA",
+    imageUrl:
+      "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
+    likeCount: 156,
+    commentCount: 22,
+    caption:
+      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ ",
+    likedBy: ["Iron Man"],
+    hashtags: [
+      "#thor",
+      "#ai",
+      "#thunder",
+      "#GrandCanyon",
+      "#EpicViews",
+      "#Superheroes",
+    ],
   },
   {
     id: "2",
@@ -225,27 +234,20 @@ export const feeds = [
   },
   {
     id: "8",
-    username: "Superhero Fan",
+    username: "Lionel Messi",
     imgProfileUrl: "",
-    likedBy1Profile: "",
+    likedBy1Profile:
+      "https://i.pinimg.com/236x/ee/ba/ad/eebaad114972ea98eb64713d379fc752.jpg",
     likedBy2Profile: "",
-    likedBy3Profile: "",
-    location: "Grand Canyon, USA",
-    imageUrl:
-      "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
-    likeCount: 156,
-    commentCount: 22,
-    caption:
-      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ ",
-    likedBy: ["Iron Man"],
-    hashtags: [
-      "#thor",
-      "#ai",
-      "#thunder",
-      "#GrandCanyon",
-      "#EpicViews",
-      "#Superheroes",
-    ],
+    likedBy3Profile:
+      "https://i.pinimg.com/236x/dd/86/b6/dd86b635382fd8047919b6c32188b096.jpg",
+    location: "Los Angeles, USA",
+    imageUrl: "https://wallpaperaccess.com/full/781200.jpg",
+    likeCount: 287,
+    commentCount: 35,
+    caption: "",
+    likedBy: ["Chris Hemsworth"],
+    hashtags: ["#Hollywood", "#LosAngeles", "#Celebrities"],
   },
   {
     id: "9",

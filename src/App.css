@@ -17,7 +17,7 @@
   --card-border-radius: 1rem;
   --btn-padding: 0.65rem 1.7rem;
   --search-padding: 0.6rem 1rem;
-  --card-padding: 1rem;
+  --card-padding: 0.9rem;
 
   --sticky-top-left: 5.3rem;
   --sticky-top-right: 5.3rem;
@@ -498,7 +498,6 @@ main .container .left .profile {
 .middle .feed .photo {
   border-radius: var(--card-border-radius);
   overflow: hidden;
-  margin: 0.7rem 0;
   cursor: pointer;
 }
 
