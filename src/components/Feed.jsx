@@ -15,7 +15,7 @@ export default function Feed() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Load more feeds when the page changes
+  // Load more feeds
   useEffect(() => {
     if (page > 1) loadMoreFeeds();
   }, [page]);
@@ -50,7 +50,6 @@ export default function Feed() {
       <div className="feeds">
         {feedList.map((feed) => (
           <div className="feed" key={feed.id}>
-            {/* Feed content remains the same */}
             <div className="head">
               <div className="user">
                 <div className="profile-photo">

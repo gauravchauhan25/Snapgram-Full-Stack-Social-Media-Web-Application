@@ -17,7 +17,6 @@ export default function Stories() {
       );
     };
 
-    // Initial visibility check
     updateButtonVisibility();
 
     storyContainer.addEventListener("scroll", updateButtonVisibility);
