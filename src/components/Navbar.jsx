@@ -13,19 +13,22 @@ function Navbar() {
     <>
       <nav>
         <div className="container">
-          <h2 className="logo">
-            <img src="" alt="" />
-            socialShots
-          </h2>
+          <div className="logo">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/185/185985.png"
+              alt=""
+            />
+            <h2>socialShots</h2>
+          </div>
 
-          <div className="search-bar">
+          {/* <div className="search-bar">
             <i className="fa-solid fa-magnifying-glass"></i>
             <input
               type="search"
               name="search"
               placeholder="Search for influencer"
             />
-          </div>
+          </div> */}
 
           {/* <div className="messenger-img">
             <img
