@@ -141,7 +141,8 @@ export const feeds = [
     imageUrl: "",
     likeCount: 341,
     commentCount: 42,
-    caption: "",
+    caption:
+      "✨🌟 Power, grace, and beauty all in one 💫👑 Gal Gadot is the real-life Wonder Woman! 💥💪 #Iconic #Superstar #Inspiration ❤️🔥",
     likedBy: ["Ryan Reynolds"],
     hashtags: ["#WonderWoman", "#TelAviv", "#Hero"],
   },
@@ -157,7 +158,8 @@ export const feeds = [
     imageUrl: "https://wallpaperaccess.com/thumb/1089821.jpg",
     likeCount: 298,
     commentCount: 50,
-    caption: "",
+    caption:
+      "Captain America's heart and humor wrapped in one! 💥💪 Chris Evans bringing the charm and hero vibes everywhere he goes. ⭐️😎 #Legend #Hero #AllAroundGoodGuy 🙌❤️",
     likedBy: ["Natalie Portman"],
     hashtags: ["#CaptainAmerica", "#Boston", "#Marvel"],
   },
@@ -177,7 +179,7 @@ export const feeds = [
     likeCount: 415,
     commentCount: 55,
     caption:
-      "Daniel Radcliffe attending the 'Harry Potter and the Half-Blood Prince Film Premiere' at the Ziegfeld Theatre in New York City.",
+      "🧙‍♂️✨ From Hogwarts to Hollywood, Daniel Radcliffe keeps casting his spell on us! 🎬🌟 A true wizard both on and off screen. 🪄💫 #Magic #Icon #Always ❤️👓",
     likedBy: ["Emma Watson"],
     hashtags: ["#Fashionista", "#Paris", "#Model"],
   },
@@ -194,7 +196,8 @@ export const feeds = [
       "https://i.pinimg.com/originals/dc/9e/d4/dc9ed4f5290c90ffbb012e5c5412c7a5.jpg",
     likeCount: 360,
     commentCount: 40,
-    caption: "",
+    caption:
+      "✨🌊 From breathtaking roles to mesmerizing eyes, Alexandria Daddario shines bright! 🎬💖 Captivating hearts everywhere she goes! 😍💫 #StarPower #Beauty #Inspiration 🌟🌺",
     likedBy: ["Angelina Jolie"],
     hashtags: ["#NewYork", "#ActionHero", "#CityLife"],
   },
@@ -211,7 +214,8 @@ export const feeds = [
       "https://i.pinimg.com/originals/ff/5a/8b/ff5a8b8a4d4c1b4d303b913084c7ea9a.jpg",
     likeCount: 289,
     commentCount: 30,
-    caption: "",
+    caption:
+      "👑🔥 The Queen of Dragons and our hearts! 🐉❤️ Emilia Clarke brings strength and grace to every role! 🌟✨ Forever slaying the game! 🎬💪 #Iconic #GameChanger #Inspiration 🌹🌈",
     likedBy: ["Kit Harington"],
     hashtags: ["#GameOfThrones", "#Dubrovnik", "#Fantasy"],
   },
@@ -228,7 +232,8 @@ export const feeds = [
       "https://i.pinimg.com/originals/7e/aa/5d/7eaa5dd8b7004a41633dc4e3a4d0c35d.jpg",
     likeCount: 212,
     commentCount: 19,
-    caption: "",
+    caption:
+      "🌿🌞 Embracing the beauty of nature one step at a time! 🌳✨ Finding peace and inspiration in every leaf, river, and mountain. 🌊🍃 Let’s protect our planet together! 🌍❤️ #NatureLover #EarthMagic #WildAndFree 🌼🏞️",
     likedBy: ["Alex Honnold"],
     hashtags: ["#Nature", "#Banff", "#Adventure"],
   },
@@ -245,13 +250,14 @@ export const feeds = [
     imageUrl: "https://wallpaperaccess.com/full/781200.jpg",
     likeCount: 287,
     commentCount: 35,
-    caption: "",
+    caption:
+      "⚽🌟 The GOAT of football! 🐐🔥 Lionel Messi dribbling through life with unmatched talent and passion! 💙💛 Forever inspiring us on and off the pitch! 🌍🏆 #Legend #FootballHero #Inspiration 🙌✨",
     likedBy: ["Chris Hemsworth"],
     hashtags: ["#Hollywood", "#LosAngeles", "#Celebrities"],
   },
   {
     id: "9",
-    username: "WonderWoman",
+    username: "Wonder Woman",
     imgProfileUrl: "",
     likedBy1Profile:
       "https://i.pinimg.com/236x/ee/ba/ad/eebaad114972ea98eb64713d379fc752.jpg",
@@ -263,13 +269,14 @@ export const feeds = [
       "https://i.pinimg.com/originals/47/ae/11/47ae115e423b2db476ae85c5011c7b88.jpg",
     likeCount: 423,
     commentCount: 33,
-    caption: "",
+    caption:
+      "💪✨ Fierce, fearless, and fabulous! 🌟🦸‍♀️ Wonder Woman embodies strength and justice, inspiring us all to be our best selves! 🌍❤️ #GirlPower #Icon #WarriorPrincess 🔥👑",
     likedBy: ["Clark Kent"],
     hashtags: ["#Iceland", "#NatureWonder", "#Adventure"],
   },
   {
     id: "10",
-    username: "AdventureSeeker",
+    username: "Adventure Seeker",
     imgProfileUrl: "",
     likedBy1Profile: "",
     likedBy2Profile: "",
@@ -279,13 +286,14 @@ export const feeds = [
       "https://i.pinimg.com/originals/1c/ea/7c/1cea7c0a0d9ea2e4e92c689f79ecb227.jpg",
     likeCount: 322,
     commentCount: 27,
-    caption: "",
+    caption:
+      "🌍⛰️ Ready to chase thrills and create unforgettable memories! 🚀✨ Adventure is out there—let's explore every corner of the world! 🌊🏞️ Embrace the journey and live life to the fullest! ❤️🔥 #AdventureSeeker #Wanderlust #LiveBoldly 🗺️✈️",
     likedBy: ["Chris Hemsworth"],
     hashtags: ["#Maui", "#IslandLife", "#Hiking"],
   },
   {
     id: "11",
-    username: "ScarlettJohansson",
+    username: "Scarlett Johansson",
     imgProfileUrl: "",
     likedBy1Profile: "",
     likedBy2Profile: "",
@@ -295,13 +303,14 @@ export const feeds = [
       "https://images.unsplash.com/photo-1525462334381-0914a2be8eec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHNjYXJsbGV0dC1qb2huc29ubmV8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
     likeCount: 372,
     commentCount: 45,
-    caption: "",
+    caption:
+      "🌟✨ From Black Widow to box office queen, Scarlett Johansson dazzles us with every role! 💪🎬 A true icon of talent and grace! ❤️🔥 Forever inspiring and breaking boundaries! #Legend #StarPower #Inspiration 🌹🎭",
     likedBy: ["Ryan Reynolds"],
     hashtags: ["#NewYork", "#Actress", "#Hollywood"],
   },
   {
     id: "12",
-    username: "HughJackman",
+    username: "Hugh Jackman",
     imgProfileUrl: "",
     likedBy1Profile: "",
     likedBy2Profile: "",
@@ -311,7 +320,8 @@ export const feeds = [
       "https://i.pinimg.com/236x/94/91/f4/9491f46512dae9eb1dbf1fc385e3c9f3.jpg",
     likeCount: 421,
     commentCount: 52,
-    caption: "",
+    caption:
+      "🎭✨ From Wolverine to the stage, Hugh Jackman is a true powerhouse of talent! 💪🌟 Bringing charm, passion, and incredible performances to every role! 🎤❤️ Forever inspiring us with his versatility! #Legend #Inspiration #BroadwayStar 🐾🎬",
     likedBy: ["Chris Hemsworth"],
     hashtags: ["#Sydney", "#Actor", "#Australia"],
   },
@@ -330,13 +340,14 @@ export const feeds = [
       "https://images.unsplash.com/photo-1531029306855-d768c897d6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGVtbWEtd2F0c29ufGVufDB8fHx8MTY3NDI3NTI4Mg&ixlib=rb-4.0.3&q=80&w=1080",
     likeCount: 489,
     commentCount: 61,
-    caption: "",
+    caption:
+      "🌟📚 From Hermione Granger to a champion for equality, Emma Watson embodies intelligence and grace! 💪✨ Inspiring us to be bold, educated, and true to ourselves! ❤️🌍 #GirlPower #Activist #Inspiration 🌹🎓",
     likedBy: ["Natalie Portman"],
     hashtags: ["#London", "#Actress", "#Fashion"],
   },
   {
     id: "14",
-    username: "TomHiddleston",
+    username: "Tom Hiddleston",
     imgProfileUrl: "",
     likedBy1Profile: "",
     likedBy2Profile: "",
@@ -346,7 +357,8 @@ export const feeds = [
       "https://images.unsplash.com/photo-1513776640368-f28e01c22d8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHRvbS1oaWRkbGVzdG9uZXxlbnwwfHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
     likeCount: 356,
     commentCount: 39,
-    caption: "",
+    caption:
+      "🌟🎭 A master of his craft and a heartthrob on screen! ❤️✨ Tom Hiddleston enchants us with every role and leaves us wanting more! 💫🔥 Here’s to the magic he brings to life! #Legend #Actor #CharmPersonified 🎉🎬",
     likedBy: ["Loki"],
     hashtags: ["#Scotland", "#Actor", "#Edinburgh"],
   },
@@ -363,7 +375,8 @@ export const feeds = [
     likeCount: 492,
     commentCount: 65,
     likedBy: ["Robert Downey Jr."],
-    caption: "",
+    caption:
+      "🌟✨ A true style icon and powerhouse performer! 💖🎬 Zendaya dazzles us with her talent, grace, and authenticity! 💫🔥 Here’s to breaking boundaries and shining bright! #Inspiration #Queen #TalentUnleashed 👑💃",
     hashtags: ["#LosAngeles", "#Fashion", "#Celebrity"],
   },
   {
@@ -379,13 +392,14 @@ export const feeds = [
       "https://images.unsplash.com/photo-1565512213-4a26b17d1c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNoYXJsaWVzb3R8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
     likeCount: 278,
     commentCount: 32,
-    caption: "",
+    caption:
+      "🎬✨ From the hilarious Star-Lord to every role in between, Chris Pratt brings the laughs and heart! 💪💖 A true entertainer who never fails to light up the screen! 🌟🔥 Here’s to adventure and laughter! #Legend #ActionHero #GoodVibesOnly 🚀🎉",
     likedBy: ["Chris Hemsworth"],
     hashtags: ["#Seattle", "#Actor", "#Adventure"],
   },
   {
     id: "17",
-    username: "ArianaGrande",
+    username: "Ariana Grande",
     imgProfileUrl: "",
     likedBy1Profile: "",
     likedBy2Profile:
@@ -396,13 +410,14 @@ export const feeds = [
       "https://images.unsplash.com/photo-1515377905707-7c7d1f0a76d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGFyaWFuYS1ncmFuZGV8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
     likeCount: 315,
     commentCount: 28,
-    caption: "",
+    caption:
+      "✨🎤 The queen of vocals and style! 💖🌟 Ariana Grande captivates us with her incredible talent and enchanting presence! 🎶🔥 Here’s to living life with passion and flair! #PopPrincess #Inspiration #ArianaForever 👑💕",
     likedBy: ["Lady Gaga"],
     hashtags: ["#Miami", "#Singer", "#Pop"],
   },
   {
     id: "18",
-    username: "BradPitt",
+    username: "Brad Pitt",
     imgProfileUrl: "",
     likedBy1Profile: "",
     likedBy2Profile: "",
@@ -414,12 +429,13 @@ export const feeds = [
     likeCount: 407,
     commentCount: 50,
     likedBy: ["Angelina Jolie"],
-    caption: "",
+    caption:
+      "🌟🎬 A timeless icon in Hollywood! 💖🔥 Brad Pitt mesmerizes us with every role and exudes charisma on and off the screen! 🍿✨ Here’s to talent, charm, and unforgettable performances! #Legend #HollywoodHeartthrob #Inspiration 👑🎉",
     hashtags: ["#Paris", "#Actor", "#Hollywood"],
   },
   {
     id: "19",
-    username: "RyanReynolds",
+    username: "Ryan Reynolds",
     imgProfileUrl: "",
     likedBy1Profile: "",
     likedBy2Profile:
@@ -430,13 +446,14 @@ export const feeds = [
       "https://images.unsplash.com/photo-1512092358251-c7e5f2f6c570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHJ5YW4tcmV5bm9sZHN8ZW58MHx8fDE2NzQyNzUyODI&ixlib=rb-4.0.3&q=80&w=1080",
     likeCount: 389,
     commentCount: 44,
-    caption: "",
+    caption:
+      "🎬✨ The king of comedy and charm! 💥😂 Ryan Reynolds always knows how to make us laugh and keep it real! ❤️🔥 Here’s to epic adventures and unforgettable moments! #Deadpool #Heartthrob #Inspiration 🌟🍿",
     likedBy: ["Hugh Jackman"],
     hashtags: ["#Vancouver", "#Actor", "#Comedy"],
   },
   {
     id: "20",
-    username: "NataliePortman",
+    username: "Natalie Portman",
     imgProfileUrl: "",
     likedBy1Profile:
       "https://i.pinimg.com/236x/ee/ba/ad/eebaad114972ea98eb64713d379fc752.jpg",
@@ -447,7 +464,8 @@ export const feeds = [
     imageUrl: "",
     likeCount: 427,
     commentCount: 58,
-    caption: "",
+    caption:
+      "🌟🎭 A brilliant actress and advocate! 💖✨ Natalie Portman captivates us with her talent and grace, both on screen and in life! 🌍💪 Here’s to empowering change and making an impact! #Icon #Inspiration #Queen 👑🌹",
     likedBy: ["Gal Gadot"],
     hashtags: ["#Israel", "#Actress", "#Hollywood"],
   },
