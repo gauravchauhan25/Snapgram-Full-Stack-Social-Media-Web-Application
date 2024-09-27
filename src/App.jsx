@@ -2,8 +2,7 @@ import React from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import Feed from "./components/Feed";
-import Stories from "./components/Stories";
+import Middle from "./components/Middle";
 
 const App = () => {
   return (
@@ -16,8 +15,7 @@ const App = () => {
           </div>
 
           <div className="middle">
-            <Stories />
-            <Feed />
+            <Middle />
           </div>
         </div>
       </main>

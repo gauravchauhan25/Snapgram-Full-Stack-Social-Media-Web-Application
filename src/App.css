@@ -53,12 +53,21 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
-.logo {
+.logo h2 {
   font-size: 1.3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: auto;
+  gap: 0.5rem;
+  margin-right: 1rem;
 }
 
 .profile-photo {
@@ -158,15 +167,17 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 1.6rem;
-  width: 4rem;
+  height: 1.5rem;
+  width: 3.5rem;
   cursor: pointer;
   border-radius: var(--border-radius);
   box-shadow: 0 0 1rem var(--color-primary-variant);
+  position: absolute;
+  right: 1rem;
 }
 
 .theme-toggler span {
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 50%;
   height: 100%;
   display: flex;
@@ -198,7 +209,7 @@ main {
 
 main .container {
   display: grid;
-  grid-template-columns: 15vw auto 22vw;
+  grid-template-columns: 16vw auto 26vw;
   column-gap: 2rem;
   position: relative;
 }
@@ -276,7 +287,7 @@ main .container .left .profile {
 
 .left .sidebar a span i {
   font-size: 1rem;
-  margin-right: 0.2rem;
+  /* margin-right: 0.2rem; */
 }
 
 .left .sidebar .active {
@@ -827,7 +838,7 @@ footer .menu-item h3 {
   }
 
   .left .sidebar .menu-item span i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .left .sidebar .menu-item span {
@@ -863,6 +874,10 @@ footer .menu-item h3 {
 
   nav .create {
     display: none;
+  }
+
+  .logo h2 {
+    font-size: 1.1rem;
   }
 
   main .container {
