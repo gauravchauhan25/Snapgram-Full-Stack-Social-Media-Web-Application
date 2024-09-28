@@ -1,14 +1,11 @@
 import React from "react";
-import "./App.css";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
-import Middle from "./components/Middle";
-import Right from "./components/Right";
+import Sidebar from "./Sidebar";
+import Middle from "./Middle";
+import Right from "./Right";
 
-const App = () => {
+export default function Home() {
   return (
     <>
-      <Navbar />
       <main>
         <div className="container">
           <div className="left">
@@ -22,10 +19,9 @@ const App = () => {
           <div className="right">
             <Right />
           </div>
+
         </div>
       </main>
     </>
   );
-};
-
-export default App;
+}

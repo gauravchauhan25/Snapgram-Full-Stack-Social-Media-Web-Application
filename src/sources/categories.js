@@ -27,14 +27,6 @@ export const categories = [
       </i>
     ),
   },
-  // {
-  //   name: "Messages",
-  //   icon: (
-  //     <i>
-  //       <span className="material-symbols-outlined">mail</span>
-  //     </i>
-  //   ),
-  // },
   {
     name: "Requests",
     icon: (

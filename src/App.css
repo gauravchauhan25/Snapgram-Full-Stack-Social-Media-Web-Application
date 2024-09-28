@@ -191,15 +191,6 @@ nav .container {
   border-radius: var(--border-radius);
 }
 
-/* .profile-container {
-      position: fixed;
-      top: 5rem;
-      left: 85%;
-      background: var(--color-white);
-      padding: var(--card-padding);
-      border-radius: var(--card-border-radius);
-      z-index: 99;
-} */
 
 /* ----------------------MAIN---------------------------------- */
 main {
@@ -209,7 +200,7 @@ main {
 
 main .container {
   display: grid;
-  grid-template-columns: 16vw auto 26vw;
+  grid-template-columns: 16vw auto 25vw;
   column-gap: 2rem;
   position: relative;
 }
@@ -598,6 +589,48 @@ main .container .right {
   border-radius: var(--card-border-radius);
 }
 
+.suggestions-container {
+  height: auto;
+  width: auto;
+  /* background-color: var(--color-white); */
+  color: var(--color-dark);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius);
+}
+
+.suggestions-container .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-right: 1.2rem;
+}
+
+.suggestion-body {
+  line-height: 1.1rem;
+}
+
+.suggestions-container p {
+  font-size: 0.9rem;
+}
+
+.suggestions-container small {
+  font-size: 0.7rem;
+}
+
+.text-purple {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+}
+
+.suggestions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.3rem 0;
+}
+
+
 .right .messages .search-bar i {
   font-size: 1.1rem;
 }
@@ -861,9 +894,13 @@ footer .menu-item h3 {
   .search-influencers {
     left: 23%;
   }
+
+  .right {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
   nav .search-bar {
     display: none;
   }
