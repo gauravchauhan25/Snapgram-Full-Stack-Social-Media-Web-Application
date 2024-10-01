@@ -11,9 +11,8 @@ export default function Sidebar() {
       <div className="left">
         <div className="sidebar">
           {categories.map((category) => (
-            <a
-              href={`/${category.name}`}
-              // to={`/${category.name}`}
+            <Link
+              to={`/${category.name}`} // Changed href to to
               className={`menu-item ${
                 selectedCategory === category.name ? "active" : ""
               }`}
@@ -22,7 +21,7 @@ export default function Sidebar() {
             >
               <span>{category.icon}</span>
               <h3>{category.name}</h3>
-            </a>
+            </Link>
           ))}
         </div>
 

@@ -1,13 +1,16 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar"; // Assuming you have a Navbar component
 import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
 import Middle from "./components/Middle";
 import Right from "./components/Right";
+import Search from "./components/Search";
+import Home from "./components/Home";
 
-const App = () => {
+export default function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <main>
         <div className="container">
@@ -16,7 +19,10 @@ const App = () => {
           </div>
 
           <div className="middle">
-            <Middle />
+            <Routes>
+              <Route exact path="/" component={<Home />} />
+              <Route path="/Search" component={<Search />} />
+            </Routes>
           </div>
 
           <div className="right">
@@ -24,8 +30,6 @@ const App = () => {
           </div>
         </div>
       </main>
-    </>
+    </Router>
   );
-};
-
-export default App;
+}
