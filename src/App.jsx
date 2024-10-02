@@ -21,15 +21,18 @@ export default function App() {
 
           <div className="middle">
             <Routes>
+              <Route path="/" element={<Middle />} />
               <Route path="/Home" element={<Middle />} />
               <Route path="/Search" element={<Search />} />
-              {/* <Route path="/Explore" element={<Explore />} /> */}
               <Route path="/Notification" element={<Notification />} />
             </Routes>
           </div>
 
           <div className="right">
-            <Right />
+            <Routes>
+              <Route path="/" element={<Right />} />
+              <Route path="/Home" element={<Right />} />
+            </Routes>
           </div>
         </div>
       </main>

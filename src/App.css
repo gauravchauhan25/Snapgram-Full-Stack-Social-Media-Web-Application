@@ -53,7 +53,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 94%;
   margin: 0 auto;
 }
 
@@ -191,7 +191,6 @@ nav .container {
   border-radius: var(--border-radius);
 }
 
-
 /* ----------------------MAIN---------------------------------- */
 main {
   position: relative;
@@ -200,7 +199,7 @@ main {
 
 main .container {
   display: grid;
-  grid-template-columns: 16vw auto 25vw;
+  grid-template-columns: 16vw auto 24vw;
   column-gap: 2rem;
   position: relative;
 }
@@ -282,7 +281,7 @@ main .container .left .profile {
 }
 
 .left .sidebar .active {
-  background: var(--color-primary);
+  background: var(--color-white);
 }
 
 .left .sidebar .active i,
@@ -316,48 +315,33 @@ main .container .left .profile {
   padding: 1rem 0;
 }
 
-/* -----------------Notification Popup----------------------- */
-.left .notification-popup {
-  position: absolute;
-  top: 0;
-  left: 110%;
-  width: 30rem;
-  background: var(--color-white);
-  color: var(--color-dark);
-  border-radius: var(--card-border-radius);
+/* ----------------Middle------------------------- */
+.middle .notification-container {
+  width: 90%;
+  height: auto;
+  margin: 1.5rem 0;
+  background-color: var(--color-white);
   padding: var(--card-padding);
-  box-shadow: 0 0 2rem var(--color-primary-variant);
-  z-index: 8;
-  display: none;
+  border-radius: var(--card-border-radius);
 }
 
-.left .notification-popup::before {
-  content: "";
-  width: 1.8rem;
-  height: 1.8rem;
-  display: block;
-  background: var(--color-white);
-  position: absolute;
-  left: -0.9rem;
-  transform: rotate(45deg);
-}
-
-.left .notification-popup > div {
+.middle .notification-container .request {
   display: flex;
-  align-items: start;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
-.left .notification-popup small {
+.middle .notification-container .profile-photo {
+  margin-right: 1rem;
+}
+.middle small {
   display: block;
+  font-size: 0.75rem;
 }
 
-.left .notification-popup .notification-body p {
+.middle .notification-body p {
   font-size: 0.85rem;
 }
 
-/* ----------------Middle------------------------- */
 .middle .stories {
   display: flex;
   justify-content: space-evenly;
@@ -475,11 +459,12 @@ main .container .left .profile {
   background: var(--color-white);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
-  margin: 1rem auto;
+  margin: 1rem 0;
   margin-right: 0.5rem;
   font-size: 0.85rem;
   line-height: 1.5rem;
   box-shadow: 0 0 1rem var(--color-primary-variant);
+  width: 90%;
 }
 
 .middle .feed .head {
@@ -611,11 +596,11 @@ main .container .right {
 }
 
 .suggestions-container p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .suggestions-container small {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
 }
 
 .text-purple {
@@ -629,7 +614,6 @@ main .container .right {
   justify-content: space-between;
   margin: 1.3rem 0;
 }
-
 
 .right .messages .search-bar i {
   font-size: 1.1rem;

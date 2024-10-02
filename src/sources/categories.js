@@ -12,14 +12,6 @@ export const categories = [
     icon: <i className="fa-solid fa-magnifying-glass"></i>,
   },
   {
-    name: "Explore",
-    icon: (
-      <i>
-        <span className="material-symbols-outlined">explore</span>
-      </i>
-    ),
-  },
-  {
     name: "Notification",
     icon: (
       <i>
@@ -28,10 +20,10 @@ export const categories = [
     ),
   },
   {
-    name: "Requests",
+    name: "Messages",
     icon: (
       <i>
-        <span className="material-symbols-outlined">favorite</span>
+        <span className="material-symbols-outlined">mail</span>
       </i>
     ),
   },
@@ -68,6 +60,14 @@ export const categories = [
     icon: (
       <i>
         <span className="material-symbols-outlined">settings</span>
+      </i>
+    ),
+  },
+  {
+    name: "Profile",
+    icon: (
+      <i>
+        <span className="material-symbols-outlined">person</span>
       </i>
     ),
   },
