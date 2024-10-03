@@ -6,7 +6,7 @@ export default function Feed() {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
-  const feedsPerPage = 5;
+  const feedsPerPage = 4;
 
   // Load the initial feeds
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function Feed() {
             <div className="head">
               <div className="user">
                 <div className="profile-photo">
-                  <img src={feed.imgProfileUrl} alt="" />
+                  <img src={feed.imgProfileUrl} alt="" loading="lazy" />
                 </div>
                 <div className="ingo">
                   <h3>{feed.username}</h3>
