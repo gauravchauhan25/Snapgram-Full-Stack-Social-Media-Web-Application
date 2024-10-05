@@ -61,7 +61,7 @@ export default function Stories() {
         {stories.map((story) => (
           <div className="story" key={story.id}>
             <div className="profile-photo">
-              <img src={story.imageUrl} alt="storyImg" />
+              <img src={story.imageUrl} alt="storyImg" loading="lazy" />
             </div>
             <p className="name">{story.name}</p>
           </div>

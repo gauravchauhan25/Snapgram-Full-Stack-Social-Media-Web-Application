@@ -1,12 +1,17 @@
 import React from "react";
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 import Middle from "./components/Middle";
+import Right from "./components/Right";
+import Search from "./components/Search";
+import Explore from "./components/Explore";
+import Notification from "./components/Notification";
 
-const App = () => {
+export default function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <main>
         <div className="container">
@@ -15,12 +20,22 @@ const App = () => {
           </div>
 
           <div className="middle">
-            <Middle />
+            <Routes>
+              <Route path="/" element={<Middle />} />
+              <Route path="/Home" element={<Middle />} />
+              <Route path="/Search" element={<Search />} />
+              <Route path="/Notification" element={<Notification />} />
+            </Routes>
+          </div>
+
+          <div className="right">
+            <Routes>
+              <Route path="/" element={<Right />} />
+              <Route path="/Home" element={<Right />} />
+            </Routes>
           </div>
         </div>
       </main>
-    </>
+    </Router>
   );
-};
-
-export default App;
+}

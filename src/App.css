@@ -53,7 +53,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 94%;
   margin: 0 auto;
 }
 
@@ -97,6 +97,7 @@ img {
   font-weight: 500;
   border-radius: var(--border-radius);
   font-size: 0.8rem;
+  margin-right: 0.7rem;
 }
 
 .btn:hover {
@@ -116,6 +117,11 @@ img {
 
 .btn-primary {
   background: var(--color-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--color-primary-variant);
   color: white;
 }
 
@@ -190,16 +196,6 @@ nav .container {
   color: white;
   border-radius: var(--border-radius);
 }
-
-/* .profile-container {
-      position: fixed;
-      top: 5rem;
-      left: 85%;
-      background: var(--color-white);
-      padding: var(--card-padding);
-      border-radius: var(--card-border-radius);
-      z-index: 99;
-} */
 
 /* ----------------------MAIN---------------------------------- */
 main {
@@ -291,7 +287,7 @@ main .container .left .profile {
 }
 
 .left .sidebar .active {
-  background: var(--color-primary);
+  background: var(--color-white);
 }
 
 .left .sidebar .active i,
@@ -325,48 +321,38 @@ main .container .left .profile {
   padding: 1rem 0;
 }
 
-/* -----------------Notification Popup----------------------- */
-.left .notification-popup {
-  position: absolute;
-  top: 0;
-  left: 110%;
-  width: 30rem;
-  background: var(--color-white);
-  color: var(--color-dark);
-  border-radius: var(--card-border-radius);
+/* ----------------Middle------------------------- */
+.middle .notification-container {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  background-color: var(--color-white);
   padding: var(--card-padding);
-  box-shadow: 0 0 2rem var(--color-primary-variant);
-  z-index: 8;
-  display: none;
+  border-radius: var(--card-border-radius);
 }
 
-.left .notification-popup::before {
-  content: "";
-  width: 1.8rem;
-  height: 1.8rem;
-  display: block;
-  background: var(--color-white);
-  position: absolute;
-  left: -0.9rem;
-  transform: rotate(45deg);
-}
-
-.left .notification-popup > div {
+.middle .notification-container .request {
   display: flex;
-  align-items: start;
-  gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.left .notification-popup small {
-  display: block;
+.middle .notification-container .profile-photo {
+  margin-right: 1rem;
 }
 
-.left .notification-popup .notification-body p {
+.middle small {
+  display: block;
+  font-size: 0.75rem;
+}
+
+.middle .notification-body {
+  margin-right: 6rem;
+}
+
+.middle .notification-body p {
   font-size: 0.85rem;
 }
 
-/* ----------------Middle------------------------- */
 .middle .stories {
   display: flex;
   justify-content: space-evenly;
@@ -484,11 +470,12 @@ main .container .left .profile {
   background: var(--color-white);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
-  margin: 1rem auto;
+  margin: 1rem 0;
   margin-right: 0.5rem;
   font-size: 0.85rem;
   line-height: 1.5rem;
   box-shadow: 0 0 1rem var(--color-primary-variant);
+  width: 90%;
 }
 
 .middle .feed .head {
@@ -527,20 +514,39 @@ main .container .left .profile {
   margin: 0.6rem;
 }
 
-.middle .interaction-buttons span {
-  font-size: 1.5rem;
-  margin-right: 0.3rem;
-  cursor: pointer;
+.liked{
+  fill: red;
+  stroke: red;
+}
+
+.middle .interaction-buttons {
+  display: flex;
   align-items: center;
 }
 
-.middle .interaction-buttons i {
+.middle .interaction-buttons span {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
+}
+
+.middle .interaction-buttons svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.middle .bookmark {
+  display: flex;
+  align-items: center;
 }
 
 .middle .bookmark span {
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .middle .liked-by {
@@ -596,6 +602,47 @@ main .container .right {
   top: var(--sticky-top-right);
   bottom: 0;
   border-radius: var(--card-border-radius);
+}
+
+.suggestions-container {
+  height: auto;
+  width: auto;
+  /* background-color: var(--color-white); */
+  color: var(--color-dark);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius);
+}
+
+.suggestions-container .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-right: 1.2rem;
+}
+
+.suggestion-body {
+  line-height: 1.1rem;
+}
+
+.suggestions-container p {
+  font-size: 0.8rem;
+}
+
+.suggestions-container small {
+  font-size: 0.65rem;
+}
+
+.text-purple {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+}
+
+.suggestions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.3rem 0;
 }
 
 .right .messages .search-bar i {
@@ -861,9 +908,19 @@ footer .menu-item h3 {
   .search-influencers {
     left: 23%;
   }
+
+  .right {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
+  .btn {
+    padding: 0.9rem;
+    font-size: 0.7rem;
+    margin-right: 0.6rem;
+  }
+
   nav .search-bar {
     display: none;
   }
@@ -885,6 +942,18 @@ footer .menu-item h3 {
     gap: 0;
   }
 
+  .middle .notification-body {
+    margin-right: 0.8rem;
+  }
+
+  .middle .notification-body p {
+    font-size: 0.75rem;
+  }
+
+  .text-muted {
+    font-size: 0.7rem;
+  }
+
   .middle .stories {
     margin: 0 0.3rem;
     height: 6rem;
@@ -904,26 +973,12 @@ footer .menu-item h3 {
     margin-right: 0.6rem;
   }
 
+  .middle .feeds .feed {
+    width: 100%;
+  }
+
   .middle .stories .scroll-button {
     display: none;
-  }
-
-  .left .notification-popup {
-    position: absolute;
-    left: -22.5rem;
-    width: 21rem;
-  }
-
-  .left .notification-popup::before {
-    display: absolute;
-    top: 1rem;
-    left: 20rem;
-    transform: rotate(45deg);
-    display: block;
-  }
-
-  .left .notification-popup .notification-body p {
-    font-size: 1.1rem;
   }
 
   main .container .middle {
@@ -932,10 +987,6 @@ footer .menu-item h3 {
   }
 
   main .container .left {
-    display: none;
-  }
-
-  main .container .right {
     display: none;
   }
 
