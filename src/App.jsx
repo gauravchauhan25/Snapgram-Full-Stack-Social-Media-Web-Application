@@ -8,6 +8,7 @@ import Right from "./components/Right";
 import Search from "./components/Search";
 import Explore from "./components/Explore";
 import Notification from "./components/Notification";
+import Profile from "./components/Profile";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
               <Route path="/Home" element={<Middle />} />
               <Route path="/Search" element={<Search />} />
               <Route path="/Notification" element={<Notification />} />
+              <Route path="/Profile" element={<Profile />} />
             </Routes>
           </div>
 
