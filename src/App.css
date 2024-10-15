@@ -218,23 +218,24 @@ nav .container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.profile-picture {
-  /* margin-right: 1rem; */
+  margin: 0 auto;
 }
 
 .profile-picture img {
-  width: 8rem;
-  height: 8rem;
+  width: 8.5rem;
+  height: 8.5rem;
   align-self: start;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--color-primary);
 }
 
-.profile-info {
-  width: 30vw;
+.profile-description.small {
+  display: none;
+}
+
+.profile-description {
+  margin: 1rem;
 }
 
 .edit-profile {
@@ -260,13 +261,78 @@ nav .container {
 .follower-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
   font-size: 14px;
+}
+
+.follower-info span {
+  margin: 1rem;
 }
 
 .profile-posts {
   gap: 10px;
   margin-top: 20px;
+}
+
+/* =================POsts Css============================== */
+/* Post.css */
+.post {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.post-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.post-username {
+  font-weight: bold;
+  color: #262626;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.post-footer {
+  padding: 16px;
+}
+
+.post-caption {
+  margin-bottom: 8px;
+}
+
+.post-hashtags .hashtag {
+  color: #00376b;
+  margin-right: 5px;
+}
+
+.post-likes {
+  display: flex;
+  align-items: center;
+}
+
+.post-likes button {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.post-likes span {
+  font-weight: bold;
+  color: #262626;
 }
 
 .post {
@@ -1005,9 +1071,8 @@ footer .menu-item h3 {
 
 @media screen and (max-width: 650px) {
   .btn {
-    padding: 0.7rem;
-    font-size: 0.75rem;
-    margin-right: 0.6rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
   }
 
   .center {
@@ -1047,12 +1112,29 @@ footer .menu-item h3 {
     font-size: 0.7rem;
   }
 
+  .profile-description {
+    margin: 1rem auto;
+  }
+
+  .edit-profile h4 {
+    font-size: 1rem;
+    /* margin: 0.2rem; */
+  }
+
+  .profile-description.small {
+    display: block;
+  }
+
+  .profile-description.large {
+    display: none;
+  }
+
   .profile-picture {
     margin-right: 2rem;
   }
 
   .profile-info {
-    width: 60vw;
+    /* width: 60vw; */
   }
 
   .middle .stories {
@@ -1089,6 +1171,12 @@ footer .menu-item h3 {
 
   main .container .left {
     display: none;
+  }
+
+  .profile-picture img {
+    width: 6rem;
+    height: 6rem;
+    align-items: start;
   }
 
   footer {
