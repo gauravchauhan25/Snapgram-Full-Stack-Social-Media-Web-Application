@@ -397,6 +397,7 @@ nav .container {
   align-items: center;
   background: var(--color-white);
   width: 80%;
+  height: 80%;
   max-width: 1600px;
   overflow: hidden;
   position: relative;
