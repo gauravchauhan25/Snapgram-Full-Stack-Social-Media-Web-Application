@@ -1,3 +1,4 @@
+
 export const users = [
   {
     id: "user1",
@@ -99,6 +100,127 @@ export const stories = [
       "https://i.pinimg.com/236x/2e/8a/e1/2e8ae1eb05f78f7b1f68d64d5566c81b.jpg",
   },
 ];
+
+export const posts = [
+  {
+    id: 1,
+    username: "Superhero Fan",
+    imgProfileUrl:
+      "https://i.pinimg.com/236x/c8/17/60/c81760d77b8c93a06d51ceb8cdda851f.jpg",
+    likedBy1Profile:
+      "https://i.pinimg.com/564x/e9/da/32/e9da3295e28aa8ef685267675ed6f9c0.jpg",
+    likedBy2Profile:
+      "https://i.pinimg.com/236x/1b/d6/71/1bd671eeb2ab172e8b8fa0f80ad9722b.jpg",
+    likedBy3Profile:
+      "https://i.pinimg.com/236x/bc/38/23/bc3823cbac2a8dbf7cde5e2b67c147c5.jpg",
+    location: "Grand Canyon, USA",
+    imageUrl:
+      "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
+    likeCount: 156,
+    commentCount: 22,
+    caption:
+      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ ",
+    likedBy: ["Iron Man"],
+    // comments: `Its great!`,
+    hashtags: [
+      "#thor",
+      "#ai",
+      "#thunder",
+      "#GrandCanyon",
+      "#EpicViews",
+      "#Superheroes",
+    ],
+  },
+  {
+    id: 2,
+    username: "Superhero Fan",
+    imgProfileUrl:
+      "https://i.pinimg.com/236x/c8/17/60/c81760d77b8c93a06d51ceb8cdda851f.jpg",
+    likedBy1Profile:
+      "https://i.pinimg.com/564x/e9/da/32/e9da3295e28aa8ef685267675ed6f9c0.jpg",
+    likedBy2Profile:
+      "https://i.pinimg.com/236x/1b/d6/71/1bd671eeb2ab172e8b8fa0f80ad9722b.jpg",
+    likedBy3Profile:
+      "https://i.pinimg.com/236x/bc/38/23/bc3823cbac2a8dbf7cde5e2b67c147c5.jpg",
+    location: "Grand Canyon, USA",
+    imageUrl:
+      "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
+    likeCount: 156,
+    comments: "Its great!",
+    commentCount: 22,
+    caption:
+      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ ",
+    likedBy: ["Iron Man"],
+    hashtags: [
+      "#thor",
+      "#ai",
+      "#thunder",
+      "#GrandCanyon",
+      "#EpicViews",
+      "#Superheroes",
+    ],
+  },
+  {
+    id: 3,
+    username: "Superhero Fan",
+    imgProfileUrl:
+      "https://i.pinimg.com/236x/c8/17/60/c81760d77b8c93a06d51ceb8cdda851f.jpg",
+    likedBy1Profile:
+      "https://i.pinimg.com/564x/e9/da/32/e9da3295e28aa8ef685267675ed6f9c0.jpg",
+    likedBy2Profile:
+      "https://i.pinimg.com/236x/1b/d6/71/1bd671eeb2ab172e8b8fa0f80ad9722b.jpg",
+    likedBy3Profile:
+      "https://i.pinimg.com/236x/bc/38/23/bc3823cbac2a8dbf7cde5e2b67c147c5.jpg",
+    location: "Grand Canyon, USA",
+    imageUrl:
+      "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
+    likeCount: 156,
+    commentCount: 22,
+    caption:
+      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ ",
+    comments: "Its great!",
+    likedBy: ["Iron Man"],
+    hashtags: [
+      "#thor",
+      "#ai",
+      "#thunder",
+      "#GrandCanyon",
+      "#EpicViews",
+      "#Superheroes",
+    ],
+  },
+  {
+    id: 4,
+    username: "Superhero Fan",
+    imgProfileUrl:
+      "https://i.pinimg.com/236x/c8/17/60/c81760d77b8c93a06d51ceb8cdda851f.jpg",
+    likedBy1Profile:
+      "https://i.pinimg.com/564x/e9/da/32/e9da3295e28aa8ef685267675ed6f9c0.jpg",
+    likedBy2Profile:
+      "https://i.pinimg.com/236x/1b/d6/71/1bd671eeb2ab172e8b8fa0f80ad9722b.jpg",
+    likedBy3Profile:
+      "https://i.pinimg.com/236x/bc/38/23/bc3823cbac2a8dbf7cde5e2b67c147c5.jpg",
+    location: "Grand Canyon, USA",
+    imageUrl:
+      "https://i.pinimg.com/564x/d8/8d/41/d88d4171b97b8eba2b1382a09deb7dc8.jpg",
+    likeCount: 156,
+    comments: "Its great!",
+    commentCount: 22,
+    caption:
+      "Thor - God of Thunder⚡️ Which Avengers would you like to see next? 🤖 Follow @the_imagine_effect for more! 🏷️ ",
+    likedBy: ["Iron Man"],
+    hashtags: [
+      "#thor",
+      "#ai",
+      "#thunder",
+      "#GrandCanyon",
+      "#EpicViews",
+      "#Superheroes",
+    ],
+  },
+];
+
+
 
 export const feeds = [
   {

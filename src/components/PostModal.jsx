@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 // import newYork from "../img/new-york.jpg";
 
-const Post = ({ posts, onPostClick }) => {
+const PostModal = ({ post, onClose }) => {
   return (
-    <div className="post-grid">
-      {posts.map((post) => (
-        <div className="post-card" key={post.id} onClick={() => onPostClick(post)}>
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <img src={post.imageUrl} alt="Post" className="modal-image" />
+
+        <div className="modal-details">
           <div className="head">
             <div className="user">
               <div className="profile-photo">
@@ -16,24 +18,27 @@ const Post = ({ posts, onPostClick }) => {
                 <small>{post.location}</small>
               </div>
             </div>
+
             <span className="edit">
               <i>
                 <span className="material-symbols-outlined">more_vert</span>
               </i>
             </span>
           </div>
-          
-          <img
-            src={post.imageUrl}
-            alt={`Post ${post.id}`}
-            className="post-image"
-          />
 
-          <div className="post-overlay">
-            <span className="post-likes">❤️ {post.likeCount}</span>
+          <div className="caption">
+            <p>
+              <b>{post.username} </b>
+              {post.caption}
+              <span className="harsh-tag">{post.hashtags.join("  ")}</span>
+            </p>
           </div>
 
-          <div className="post-details">
+          <div className="comment-section">
+            {/* <p>{post.comments}</p> */}
+          </div>
+
+          <div style={{ position: "absolute", bottom: "1.5rem" }}>
             <div className="action-button">
               <div className="interaction-buttons">
                 <span>
@@ -79,20 +84,6 @@ const Post = ({ posts, onPostClick }) => {
                   </svg>
                 </span>
               </div>
-
-              <div className="bookmark">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 16 16"
-                    fill="transparent"
-                  >
-                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
-                  </svg>
-                </span>
-              </div>
             </div>
 
             <div className="liked-by">
@@ -110,22 +101,14 @@ const Post = ({ posts, onPostClick }) => {
                 <b>{post.likeCount} others</b>
               </p>
             </div>
-
-            <div className="caption">
-              <p>
-                <b>{post.username} </b>
-                {post.caption}
-                <span className="harsh-tag">{post.hashtags.join("  ")}</span>
-              </p>
-            </div>
-            <div className="comments text-muted">
-              <a href="#">View all {post.commentCount} comments</a>
-            </div>
           </div>
         </div>
-      ))}
+      </div>
+      <button className="close-button" onClick={onClose}>
+        X
+      </button>
     </div>
   );
 };
 
-export default Post;
+export default PostModal;
