@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import profilePhoto from "../img/profile-photo.jpg";
-import Post from "../components/Posts";
+import Posts from "../components/Posts";
+import PostModal from "./PostModal";
+import { posts } from "../sources/constants";
 
 const Profile = () => {
+  const [selectedPost, setSelectedPost] = useState(null);
+
+  const openModal = (post) => {
+    setSelectedPost(post);
+  };
+
+  const closeModal = () => {
+    setSelectedPost(null);
+  };
+
   const user = {
     username: "Gaurav Chauhan",
     fullName: "__gauravchauhan_",
     bio: `👑ɠąųཞą۷ ʂıŋɠɧ ƈɧąųɧąŋ 👑,
-      ɾɑϳϼựʈ,
       20 || ɖɛƖɧıɬɛ,
-      MSI 👨‍🎓,
-      ຟiŞh ๓ē ໐ຖ 25 Şēptē๓๖ēr🥳,
-      hคppiຖēŞŞ คlຟคฯŞ😉☺️😝`,
+      MSI 👨‍🎓`,
     followers: 1580,
     following: 200,
     posts: [
@@ -31,7 +40,7 @@ const Profile = () => {
           <div className="profile-info">
             <div className="edit-profile">
               <h4>{user.fullName}</h4>
-              <button className="btn btn-primary">Follow</button>
+              {/* <button className="btn btn-primary">Follow</button> */}
             </div>
 
             <div className="profile-description large">
@@ -40,6 +49,7 @@ const Profile = () => {
                   __html: user.bio.replace(/,/g, ",<br />"),
                 }}
               ></p>
+
               <div className="follower-info">
                 <span>
                   <strong>{user.posts.length}</strong> Posts
@@ -75,7 +85,11 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* <Post /> */}
+      <div className="post-title">
+        <a href="#">Posts</a>
+      </div>
+      <Posts posts={posts} onPostClick={openModal} />
+      {selectedPost && <PostModal post={selectedPost} onClose={closeModal} />}
     </>
   );
 };

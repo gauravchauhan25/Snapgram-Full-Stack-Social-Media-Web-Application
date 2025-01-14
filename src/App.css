@@ -273,83 +273,286 @@ nav .container {
   margin-top: 20px;
 }
 
-/* =================POsts Css============================== */
-/* Post.css */
-.post {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  background-color: white;
-  overflow: hidden;
-}
-
-.post-header {
-  padding: 16px;
+/* ==========================POSTS CSS============================== */
+.post-title {
   display: flex;
+  text-align: center;
   align-items: center;
-  border-bottom: 1px solid #dbdbdb;
+  justify-content: center;
+  margin: 0.7rem auto;
 }
 
-.post-username {
-  font-weight: bold;
-  color: #262626;
+.post-title a {
+  color: var(--color-black);
 }
 
-.post-image img {
+.divider {
+  height: 0.5px;
+  background-color: var(--color-dark);
+  margin: 16px 0;
   width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
-.post-footer {
+.post-card {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-white);
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  box-shadow: 0 0 1rem var(--color-primary-variant);
+}
+
+.post-card .head {
+  display: none;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   padding: 16px;
 }
 
-.post-caption {
-  margin-bottom: 8px;
+.post-details {
+  display: none;
+  width: 50%;
+  background-color: var(--color-white);
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-hashtags .hashtag {
-  color: #00376b;
-  margin-right: 5px;
+.post-details p,
+.post-details ul {
+  margin: 8px 0;
 }
 
-.post-likes {
-  display: flex;
-  align-items: center;
+.post-details ul {
+  padding-left: 16px;
 }
 
-.post-likes button {
-  background: none;
-  border: none;
-  color: #0095f6;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 10px;
+.post-details li {
+  margin-bottom: 4px;
 }
 
-.post-likes span {
-  font-weight: bold;
-  color: #262626;
-}
-
-.post {
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.post img {
+.post-image {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.2s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
-.post img:hover {
-  transform: scale(1.05);
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #202528;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.post-card:hover .post-overlay {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.post-likes {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* ============================PostModal CSS===================================== */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  background: var(--color-white);
+  width: 80%;
+  height: 90%;
+  max-width: 1600px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-right: 1rem;
+}
+
+.modal-details {
+  padding: 0 var(--card-padding);
+  padding: 0.3rem;
+  /* width: 50%; */
+  height: 90%;
+  background-color: var(--color-white);
+}
+
+.modal-details .caption {
+  position: absolute;
+  top: 5rem;
+  margin: 0 10px;
+}
+
+.modal-details .user {
+  position: absolute;
+  top: 1.5rem;
+}
+
+.modal-details .head .edit {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
+
+.close-button {
+  background: transparent;
+  color: var(--color-dark);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 2px;
+  z-index: 2000;
+}
+
+/* ====================COMMENT BOX CSS========================= */
+.comment-box {
+  width: 100%;
+  height: 80%;
+  max-width: 100%;
+  background: var(--color-white);
+  padding: 10px;
+}
+
+.comments-section {
+  overflow: auto;
+  width: 36vw;
+  max-height: 35vh;
+  margin: 1.2rem 0;
+}
+
+.user-comment {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1250px) {
+  .comments-section {
+    width: 35vw;
+    max-height: 20vh;
+  }
+}
+
+@media (max-width: 1050px) {
+  .comments-section {
+    width: 35vw;
+    max-height: 5vh;
+  }
+}
+
+.comment {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.no-comments {
+  color: var(--color-dark);
+  font-size: 0.85rem;
+}
+
+.add-comment-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.add-comment-section input {
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--color-primary-variant);
+  font-size: 0.9rem;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  border-radius: 20px;
+}
+
+.add-comment-section input:focus {
+  outline: none;
+  border: 1px solid var(--color-gray);
+}
+
+.add-comment-section button {
+  background: transparent;
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.add-comment-section button:disabled {
+  color: #b2dffc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+  .modal-backdrop {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .modal-content {
+    height: auto;
+  }
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card {
+    flex-direction: column;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+  }
+
+  .post-image,
+  .post-details {
+    display: block;
+    width: 100%;
+  }
 }
 
 /* ----------------------MAIN---------------------------------- */
@@ -608,7 +811,7 @@ main .container .left .profile {
 }
 
 /* -------------Feeds------------------------- */
-.middle .feeds .feed {
+.feed {
   background: var(--color-white);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
@@ -620,24 +823,24 @@ main .container .left .profile {
   width: 90%;
 }
 
-.middle .feed .head {
+.head {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
 }
 
-.middle .feed .user {
+.user {
   display: flex;
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.feed .head .ingo h3 {
+.head .ingo h3 {
   font-size: 0.9rem;
   line-height: 1rem;
 }
 
-.middle .feeds .feed .head .ingo small {
+.head .ingo small {
   font-size: 0.7rem;
   color: var(--color-gray);
 }
@@ -648,7 +851,7 @@ main .container .left .profile {
   cursor: pointer;
 }
 
-.middle .feed .action-button {
+.action-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -666,12 +869,12 @@ main .container .left .profile {
   stroke: white;
 }
 
-.middle .interaction-buttons {
+.interaction-buttons {
   display: flex;
   align-items: center;
 }
 
-.middle .interaction-buttons span {
+.interaction-buttons span {
   margin-right: 0.5rem;
   cursor: pointer;
   display: flex;
@@ -679,28 +882,28 @@ main .container .left .profile {
   font-size: 1.5rem;
 }
 
-.middle .interaction-buttons svg {
+.interaction-buttons svg {
   width: 1.7rem;
   height: 1.7rem;
 }
 
-.middle .bookmark {
+.bookmark {
   display: flex;
   align-items: center;
 }
 
-.middle .bookmark span {
+.bookmark span {
   font-size: 1.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.middle .liked-by {
+.liked-by {
   display: flex;
 }
 
-.middle .liked-by span {
+.liked-by span {
   width: 1.5rem;
   height: 1.5rem;
   display: block;
@@ -710,35 +913,35 @@ main .container .left .profile {
   margin-left: -0.6rem;
 }
 
-.middle .liked-by span:first-child {
+.liked-by span:first-child {
   margin: 0;
 }
 
-.middle .liked-by p {
+.liked-by p {
   margin-left: 0.5rem;
   font-size: 0.9rem;
 }
 
-.middle .caption p {
+.caption p {
   font-size: 0.85rem;
   margin-bottom: 0.6rem;
 }
 
-.middle .caption b {
+.caption b {
   font-size: 0.9rem;
 }
 
-.middle .caption b:hover {
+.caption b:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.middle .comments a {
+.comments a {
   color: var(--color-gray);
   font-size: 0.9rem;
 }
 
-.middle .comments a:hover {
+.comments a:hover {
   text-decoration: underline;
 }
 
@@ -985,7 +1188,16 @@ main .container .right {
   transform: rotate(45deg);
 }
 
-/* Footer */
+/* ################################SETTINGS CSS########################################### */
+.settings-box {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  width: 100%;
+  height: auto;
+}
+
+/*############################################ Footer####################################################### */
 footer {
   background: var(--color-white);
   padding: 1rem;
@@ -1133,10 +1345,6 @@ footer .menu-item h3 {
     margin-right: 2rem;
   }
 
-  .profile-info {
-    /* width: 60vw; */
-  }
-
   .middle .stories {
     margin: 0 0.3rem;
     height: 6rem;
@@ -1211,3 +1419,5 @@ footer .menu-item h3 {
     font-size: 0.85rem;
   }
 }
+
+
