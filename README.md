@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=700&height=70&duration=4000&lines=Socialshots+A+Social+Media+Application" />
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=700&height=70&duration=4000&lines=Snapgram+A+Social+Media+Application" />
   <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=700&height=70&duration=4000&lines=Made+with+React+JS" />
 </h1>
 
@@ -14,4 +14,4 @@
 </ul>
 
 <h3>Tools and Tech Stacks used</h3>
-<img src="https://skillicons.dev/icons?i=react,javascript,html,css,vscode,github" />
+<img src="https://skillicons.dev/icons?i=react,javascript,html,css,vscode,github,appwrite,node" />
