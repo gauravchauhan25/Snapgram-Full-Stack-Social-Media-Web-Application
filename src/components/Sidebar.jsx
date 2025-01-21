@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { categories } from "../sources/categories";
 
 export default function Sidebar() {
@@ -7,7 +7,6 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="left">
         <div className="sidebar">
           {categories.map((category) => (
             <div className="category">
@@ -27,7 +26,6 @@ export default function Sidebar() {
         </div>
 
         <label className="btn btn-primary">Create Post</label>
-      </div>
     </>
   );
 }

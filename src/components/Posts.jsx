@@ -1,11 +1,31 @@
-import React, { useState } from "react";
-// import newYork from "../img/new-york.jpg";
+import React, { useState, useEffect } from "react";
 
 const Post = ({ posts, onPostClick }) => {
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsDisabled(true);
+      } else {
+        setIsDisabled(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
   return (
     <div className="post-grid">
       {posts.map((post) => (
-        <div className="post-card" key={post.id} onClick={() => onPostClick(post)}>
+        <div  className={`post-card ${isDisabled ? "disabled" : ""}`} key={post.id} onClick={() => !isDisabled && onPostClick(post)}
+>
           <div className="head">
             <div className="user">
               <div className="profile-photo">

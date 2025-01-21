@@ -87,10 +87,9 @@ const Profile = () => {
 
       <div className="post-title">
         <a href="#">Posts</a>
-
       </div>
-        <Posts posts={posts} onPostClick={openModal} />
-        {selectedPost && <PostModal post={selectedPost} onClose={closeModal} />}
+      <Posts posts={posts} onPostClick={openModal} />
+      {selectedPost && <PostModal post={selectedPost} onClose={closeModal} />}
     </>
   );
 };

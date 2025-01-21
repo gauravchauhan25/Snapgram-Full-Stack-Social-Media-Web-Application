@@ -18,7 +18,7 @@ function Navbar() {
               src="https://cdn-icons-png.flaticon.com/128/185/185985.png"
               alt=""
             />
-            <h2>socialShots</h2>
+            <h2>Snapgram</h2>
           </div>
 
           <div className="theme-toggler" onClick={handleThemeToggle}>
