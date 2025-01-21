@@ -1,10 +1,10 @@
 <h1 align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=700&height=70&duration=4000&lines=Snapgram+A+Social+Media+Application" />
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=700&height=70&duration=4000&lines=Made+with+React+JS" />
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=700&height=70&duration=4000&lines=Made+with+React+JS+&Node+Js" />
 </h1>
 
 <h3>Description</h3>
-<p>It is a social media application made with popular front-end framework React JS </p>
+<p>It is a social media application made with popular front-end framework React JS and backend service with Appwrite</p>
 
 <h3>Features</h3>
 <ul>
